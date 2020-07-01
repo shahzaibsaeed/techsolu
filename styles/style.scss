@@ -1,0 +1,139 @@
+                      // The code is written by Shahzaib Saeed, project started from 23rd June, 2020
+
+
+$fontColor: #ffff;
+$textAllign: center;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(180deg, rgba(7,20,94,1) 0%, rgba(133,62,181,1) 84%, rgba(205,83,255,1) 100%);
+  color: $fontColor !important;
+  // font-family: sans-serif, arial !important;
+}
+
+section, footer {
+  margin-top: 12rem;
+}
+
+// navigation bar
+nav {
+  background-color: #061545E6;
+  position: fixed !important;
+  width: 100%;
+  top: 0px;
+  z-index:100;
+
+  a {
+    color: $fontColor !important;
+    transition: opacity 0.5s;
+    text-transform: uppercase;
+  }
+
+  a:hover {
+    opacity: 0.7;
+    border-bottom: 0.5px solid rgb(180, 180, 180);
+  }
+
+  li {
+    margin: 0 3.2rem;
+  }
+
+  .navbar-toggler{
+    border-color: $fontColor !important;
+  }
+
+}
+
+// home section
+.container-slogan {
+  h1 {
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    text-align: $textAllign;
+    font-weight: 300;
+  }
+
+  p {
+    text-align: $textAllign;
+    margin: 0 20%;
+    padding: 0 11%;
+    font-size: -webkit-xxx-large;
+    font-weight: lighter;
+  }
+
+}
+
+// about section
+.container-about {
+  h1 {
+    text-align: $textAllign;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    text-align: justify;
+    font-size: larger;
+    font-weight: 300;
+  }
+}
+
+// services section
+.container-services {
+  h1, h4 {
+    text-align: $textAllign;
+  }
+  .container-img {
+    height: 250px;
+    background-size: cover;
+  }
+}
+
+// portfolio section
+.carousel-inner {
+  img {
+  height: 500px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  }
+
+  .carousel-caption {
+    z-index: 10;
+    top: 30%;
+    h5 {
+      font-size: xxx-large;
+      font-weight: 300;
+      // letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+    p {
+      font-weight: 400;
+      text-align: center;
+      font-size: larger;
+    }
+  }
+}
+
+// contact section
+.container-contact {
+  h1, h5 {
+    text-align: $textAllign;
+  }
+}
+
+// Responsive for Screen less then 1199px
+@media screen and (max-width: 1199px) {
+  nav {
+    li {
+      margin: 0 2.2rem;
+    }
+  }
+} 
+
+// Points to remember
+// 1) adjust the size of Slogan for screen less then 320px

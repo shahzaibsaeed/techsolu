@@ -1,0 +1,81 @@
+html {
+  scroll-behavior: smooth; }
+
+body {
+  background: linear-gradient(180deg, #07145e 0%, #853eb5 84%, #cd53ff 100%);
+  color: #ffff !important; }
+
+section, footer {
+  margin-top: 12rem; }
+
+nav {
+  background-color: #061545E6;
+  position: fixed !important;
+  width: 100%;
+  top: 0px;
+  z-index: 100; }
+  nav a {
+    color: #ffff !important;
+    transition: opacity 0.5s;
+    text-transform: uppercase; }
+  nav a:hover {
+    opacity: 0.7;
+    border-bottom: 0.5px solid #b4b4b4; }
+  nav li {
+    margin: 0 3.2rem; }
+  nav .navbar-toggler {
+    border-color: #ffff !important; }
+
+.container-slogan h1 {
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  font-weight: 300; }
+.container-slogan p {
+  text-align: center;
+  margin: 0 20%;
+  padding: 0 11%;
+  font-size: -webkit-xxx-large;
+  font-weight: lighter; }
+
+.container-about h1 {
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 2rem; }
+.container-about p {
+  text-align: justify;
+  font-size: larger;
+  font-weight: 300; }
+
+.container-services h1, .container-services h4 {
+  text-align: center; }
+.container-services .container-img {
+  height: 250px;
+  background-size: cover; }
+
+.carousel-inner img {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+.carousel-inner .carousel-caption {
+  z-index: 10;
+  top: 30%; }
+  .carousel-inner .carousel-caption h5 {
+    font-size: xxx-large;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 24px; }
+  .carousel-inner .carousel-caption p {
+    font-weight: 400;
+    text-align: center;
+    font-size: larger; }
+
+.container-contact h1, .container-contact h5 {
+  text-align: center; }
+
+@media screen and (max-width: 1199px) {
+  nav li {
+    margin: 0 2.2rem; } }
+
+/*# sourceMappingURL=style.css.map */
