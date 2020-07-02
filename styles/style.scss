@@ -1,5 +1,4 @@
-                      // The code is written by Shahzaib Saeed, project started from 23rd June, 2020
-
+// The code is written by Shahzaib Saeed, project started from 23rd June, 2020
 
 $fontColor: #ffff;
 $textAllign: center;
@@ -9,22 +8,22 @@ html {
 }
 
 body {
-  background: linear-gradient(180deg, rgba(7,20,94,1) 0%, rgba(133,62,181,1) 84%, rgba(205,83,255,1) 100%);
+  background: linear-gradient(180deg, rgba(7, 20, 94, 1) 0%, rgba(133, 62, 181, 1) 84%, rgba(205, 83, 255, 1) 100%);
   color: $fontColor !important;
-  // font-family: sans-serif, arial !important;
+  width: 1400px;
+  max-width: 100%;
+  margin: 0 auto !important;
 }
 
-section, footer {
-  margin-top: 8rem;
-}
-
-// navigation bar
+//navigation bar
 nav {
-  background-color: #061545E6;
+  background-color: #061545e6;
   position: fixed !important;
-  width: 100%;
+
   top: 0px;
-  z-index:100;
+  z-index: 100;
+  width: 1400px;
+  max-width: 100%;
 
   a {
     color: $fontColor !important;
@@ -41,38 +40,80 @@ nav {
     margin: 0 3.2rem;
   }
 
-  .navbar-toggler{
+  .navbar-toggler {
     border-color: $fontColor !important;
   }
-
 }
 
 // home section
-.container-slogan {
-  h1 {
-    font-size: 4rem;
-    letter-spacing: 0.5rem;
-    text-align: $textAllign;
-    font-weight: 300;
+.section-home {
+  margin-top: 3.7rem;
+  margin-bottom: 11rem;
+
+  .container-img-1 {
+    background-size: cover;
+    height: 160px;
+    width: 15% !important;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .container-img-2 {
+    background-size: cover;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 450px;
+    width: 20% !important;
+    margin-left: 0px;
+    margin-top: -7rem !important;
   }
 
-  p {
-    text-align: $textAllign;
-    margin: 0 20%;
-    padding: 0 11%;
-    font-size: -webkit-xxx-large;
-    font-weight: lighter;
+  .container-img-3 {
+    background-size: cover;
+    border-radius: 20px;
+    height: 240px;
+    width: 18% !important;
+    margin-right: 5rem;
+    margin-top: -30rem;
   }
 
+  .container-img-4 {
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 18% !important;
+    height: 345px;
+    margin-top: -1rem;
+    margin-right: 0px;
+  }
+  .container-slogan {
+    h1 {
+      font-size: 3rem;
+      letter-spacing: 0.5rem;
+      text-align: $textAllign;
+      font-weight: 300;
+      margin-top: -22rem !important;
+      margin: 0 20%;
+      padding: 0 11%;
+    }
+
+    p {
+      text-align: $textAllign;
+      margin: -2% 20%;
+      padding: 0 11%;
+      font-size: -webkit-xxx-large;
+      font-weight: lighter;
+    }
+  }
 }
 
 // about section
 .container-about {
+  margin-bottom: 8rem;
   h1 {
     text-align: $textAllign;
     font-weight: 300;
     text-transform: uppercase;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     font-size: xx-large;
   }
 
@@ -85,6 +126,7 @@ nav {
 
 // services section
 .container-services {
+  margin-bottom: 8rem;
   h1 {
     text-align: $textAllign;
     font-weight: 300;
@@ -113,10 +155,11 @@ nav {
 
 // portfolio section
 .carousel-inner {
+  margin-bottom: 8rem;
   img {
-  height: 500px;
-  background-repeat:no-repeat;
-  background-size:cover;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .carousel-caption {
@@ -139,6 +182,7 @@ nav {
 
 // contact section
 .container-contact {
+  margin-bottom: 8rem;
   h1 {
     text-align: $textAllign;
     font-weight: 300;
@@ -167,7 +211,7 @@ nav {
   }
   #address li:before {
     font-family: FontAwesome;
-	  content: "\f041";
+    content: "\f041";
     display: inline-block;
     margin-left: -1.8em;
     width: 1.8em;
@@ -190,12 +234,125 @@ nav {
 
 // Responsive for Screen less then 1199px
 @media screen and (max-width: 1199px) {
+  body {
+    font-size: 1.4rem !important;
+  }
+
   nav {
     li {
-      margin: 0 2.2rem;
+      margin: 0 1.4rem;
     }
   }
-} 
+
+  .container-slogan {
+    h1 {
+      margin: 0 20% !important;
+      padding: 0 8% !important;
+    }
+    p {
+      margin: 0 20% !important;
+      padding: 0 9% !important;
+    }
+  }
+
+  .container-services {
+    .container-img {
+      height: 225px !important;
+    }
+    h4 {
+      height: 14% !important;
+    }
+  }
+
+  .container-contact {
+    .col-sm {
+      padding: 1.5rem 2rem !important;
+      margin: 1rem 4.1rem !important;
+    }    
+  }
+}
+
+// Responsive for Screen less then 768px
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 1.8rem !important;
+  }
+
+  h1 {
+    font-size: xxx-large !important;
+  }
+
+  h4 {
+    font-size: larger !important;
+  }
+
+  .section-home {
+    margin-bottom: 6rem !important;
+
+    .container-img-1 {
+      width: 26% !important;
+    }
+    .container-img-2 {
+      height: 300px !important;
+      width: 24% !important;
+      margin-top: -5rem !important;
+    }
+    .container-img-3 {
+      height: 175px !important;
+    width: 22% !important;
+      margin-top: -17.5rem !important;
+      margin-right: 3rem !important;
+    }
+    .container-img-4 {
+      width: 22% !important;
+      height: 280px !important;
+    }
+    .container-slogan {
+      img {
+        height: 50px !important;
+        width: 50px !important;
+      }
+      h1 {
+        margin: 0 !important;
+        padding: 0 !important;
+        margin-top: -15rem !important;
+      }
+      p {
+        padding: 0 !important;
+      }
+    }
+  }
+
+  .carousel-caption {
+    p {
+      font-size: large !important;
+    }
+  }
+
+  .container-services {
+    .col-sm {
+      margin: 2rem 6rem !important;
+    }
+    .container-img {
+      height: 400px !important;
+    }
+    h4 {
+      height: 5% !important;
+      margin: 2rem 0 !important;
+    }
+    p {
+      text-align: center !important;
+    }
+  }
+  
+  .container-contact {
+    .col-sm {
+      padding: 1.5rem 3rem !important;
+      margin: 2rem 4.1rem !important;
+    }
+  }
+
+}
 
 // Points to remember
 // 1) adjust the size of Slogan for screen less then 320px
