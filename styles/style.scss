@@ -15,7 +15,7 @@ body {
 }
 
 section, footer {
-  margin-top: 12rem;
+  margin-top: 8rem;
 }
 
 // navigation bar
@@ -72,7 +72,8 @@ nav {
     text-align: $textAllign;
     font-weight: 300;
     text-transform: uppercase;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+    font-size: xx-large;
   }
 
   p {
@@ -84,12 +85,29 @@ nav {
 
 // services section
 .container-services {
-  h1, h4 {
+  h1 {
     text-align: $textAllign;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    font-size: xx-large;
+  }
+  .col-sm {
+    margin: 1rem 0;
   }
   .container-img {
     height: 250px;
     background-size: cover;
+    border-radius: 15px;
+  }
+  h4 {
+    text-align: $textAllign;
+    font-weight: 400;
+    margin: 1rem;
+  }
+  p {
+    text-align: justify;
+    font-weight: 300;
   }
 }
 
@@ -121,8 +139,52 @@ nav {
 
 // contact section
 .container-contact {
-  h1, h5 {
+  h1 {
     text-align: $textAllign;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    font-size: xx-large;
+  }
+  .col-sm {
+    border: 0.5px solid;
+    border-radius: 16px;
+    padding: 1rem;
+    margin: 1rem 1rem;
+  }
+  h4 {
+    text-align: $textAllign;
+    font-weight: 400;
+  }
+  ul {
+    list-style: none;
+    padding-left: 1rem;
+  }
+  li {
+    font-weight: 300;
+    text-align: justify;
+    margin: 1rem;
+  }
+  #address li:before {
+    font-family: FontAwesome;
+	  content: "\f041";
+    display: inline-block;
+    margin-left: -1.8em;
+    width: 1.8em;
+  }
+  #contactNum li:before {
+    font-family: FontAwesome;
+    content: "\f095";
+    display: inline-block;
+    margin-left: -1.8em;
+    width: 1.8em;
+  }
+  #support li:before {
+    font-family: FontAwesome;
+    content: "\f1cd";
+    display: inline-block;
+    margin-left: -1.8em;
+    width: 1.8em;
   }
 }
 

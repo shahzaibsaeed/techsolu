@@ -6,7 +6,7 @@ body {
   color: #ffff !important; }
 
 section, footer {
-  margin-top: 12rem; }
+  margin-top: 8rem; }
 
 nav {
   background-color: #061545E6;
@@ -42,17 +42,32 @@ nav {
   text-align: center;
   font-weight: 300;
   text-transform: uppercase;
-  margin-bottom: 2rem; }
+  margin-bottom: 4rem;
+  font-size: xx-large; }
 .container-about p {
   text-align: justify;
   font-size: larger;
   font-weight: 300; }
 
-.container-services h1, .container-services h4 {
-  text-align: center; }
+.container-services h1 {
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  font-size: xx-large; }
+.container-services .col-sm {
+  margin: 1rem 0; }
 .container-services .container-img {
   height: 250px;
-  background-size: cover; }
+  background-size: cover;
+  border-radius: 15px; }
+.container-services h4 {
+  text-align: center;
+  font-weight: 400;
+  margin: 1rem; }
+.container-services p {
+  text-align: justify;
+  font-weight: 300; }
 
 .carousel-inner img {
   height: 500px;
@@ -71,8 +86,45 @@ nav {
     text-align: center;
     font-size: larger; }
 
-.container-contact h1, .container-contact h5 {
-  text-align: center; }
+.container-contact h1 {
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  font-size: xx-large; }
+.container-contact .col-sm {
+  border: 0.5px solid;
+  border-radius: 16px;
+  padding: 1rem;
+  margin: 1rem 1rem; }
+.container-contact h4 {
+  text-align: center;
+  font-weight: 400; }
+.container-contact ul {
+  list-style: none;
+  padding-left: 1rem; }
+.container-contact li {
+  font-weight: 300;
+  text-align: justify;
+  margin: 1rem; }
+.container-contact #address li:before {
+  font-family: FontAwesome;
+  content: "\f041";
+  display: inline-block;
+  margin-left: -1.8em;
+  width: 1.8em; }
+.container-contact #contactNum li:before {
+  font-family: FontAwesome;
+  content: "\f095";
+  display: inline-block;
+  margin-left: -1.8em;
+  width: 1.8em; }
+.container-contact #support li:before {
+  font-family: FontAwesome;
+  content: "\f1cd";
+  display: inline-block;
+  margin-left: -1.8em;
+  width: 1.8em; }
 
 @media screen and (max-width: 1199px) {
   nav li {
